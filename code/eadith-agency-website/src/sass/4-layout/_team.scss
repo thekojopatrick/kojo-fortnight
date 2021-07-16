@@ -4,6 +4,16 @@
     align-self: center;
     justify-self: center;
 
+    @media only screen and(max-width:$bp-tablet) {
+        align-self: flex-end;
+    }
+
+    @media only screen and(max-width:$bp-mobile) {
+        _display: none;
+        grid-column: 4/ -1;
+        align-self: flex-end;
+    }
+
     &__list {
         display: flex;
         flex-direction: column;

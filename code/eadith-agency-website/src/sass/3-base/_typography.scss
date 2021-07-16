@@ -9,6 +9,19 @@
         @media only screen and(max-width:$bp-largest) {
             font-size: 18rem;
         }
+        @media only screen and(max-width:$bp-large) {
+            font-size: 15rem;
+        }
+        @media only screen and(max-width:$bp-medium) {
+            font-size: 13rem;
+        }
+        @media only screen and(max-width:$bp-tablet) {
+            font-size: 8rem;
+        }
+        @media only screen and(max-width:$bp-mobile) {
+            font-size: 5rem;
+            line-height: 1;
+        }
     }
     &-2 {
     }

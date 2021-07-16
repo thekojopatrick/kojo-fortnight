@@ -341,12 +341,33 @@ section {
   gap: 2rem; }
   @media only screen and (max-width: 75em) {
     .container {
-      margin: 0 7rem;
-      _grid-template-rows: 7rem 40vh 30vh 20vh; } }
+      margin: 0 7rem; } }
+  @media only screen and (max-width: 50em) {
+    .container {
+      margin: 0;
+      padding: 0 4rem;
+      grid-template-rows: 7rem 50vh 40vh; } }
+  @media only screen and (max-width: 44.4em) {
+    .container {
+      grid-template-rows: 7rem 40vh 40vh; } }
+  @media only screen and (max-width: 26.57em) {
+    .container {
+      grid-template-columns: [full-start] repeat(4, [col-start] minmax(-webkit-min-content, 1fr) [col-end]) [full-end];
+      grid-template-columns: [full-start] repeat(4, [col-start] minmax(min-content, 1fr) [col-end]) [full-end]; } }
 
 .logo {
   width: 4.5rem;
   height: 4.5rem; }
+
+.full-stop {
+  line-height: 0; }
+  .full-stop svg {
+    width: 1.6rem;
+    height: 1.6rem; }
+  @media only screen and (max-width: 26.57em) {
+    .full-stop {
+      display: none;
+      width: 80%; } }
 
 .m-mb {
   margin-bottom: 2.4rem; }
@@ -363,6 +384,19 @@ section {
   @media only screen and (max-width: 75em) {
     .heading-1 {
       font-size: 18rem; } }
+  @media only screen and (max-width: 50em) {
+    .heading-1 {
+      font-size: 15rem; } }
+  @media only screen and (max-width: 44.4em) {
+    .heading-1 {
+      font-size: 13rem; } }
+  @media only screen and (max-width: 40em) {
+    .heading-1 {
+      font-size: 8rem; } }
+  @media only screen and (max-width: 26.57em) {
+    .heading-1 {
+      font-size: 5rem;
+      line-height: 1; } }
 
 .heading-3, .heading-4 {
   text-transform: uppercase;
@@ -402,17 +436,41 @@ section {
   justify-content: space-between; }
   .nav--btn {
     margin-right: 6rem; }
+    @media only screen and (max-width: 50em) {
+      .nav--btn {
+        margin-right: 3rem; } }
+    @media only screen and (max-width: 44.4em) {
+      .nav--btn {
+        margin-right: 1.5rem; } }
 
 .header {
   grid-column: col-start 1 / col-end 6;
   grid-row: 2 /3;
   align-self: center; }
+  @media only screen and (max-width: 50em) {
+    .header {
+      align-self: stretch; } }
+  @media only screen and (max-width: 40em) {
+    .header {
+      align-self: flex-end; } }
+  @media only screen and (max-width: 26.57em) {
+    .header {
+      grid-column: col-start 1 / span 3;
+      align-self: center; } }
 
 .team {
   grid-column: col-start 8 / -1;
   grid-row: 2 /3;
   align-self: center;
   justify-self: center; }
+  @media only screen and (max-width: 40em) {
+    .team {
+      align-self: flex-end; } }
+  @media only screen and (max-width: 26.57em) {
+    .team {
+      _display: none;
+      grid-column: 4/ -1;
+      align-self: flex-end; } }
   .team__list {
     display: flex;
     flex-direction: column;
@@ -434,7 +492,6 @@ section {
       _border: solid 2px #fff; }
 
 .footer {
-  _background-color: #3d9970;
   grid-column: full-start / full-end;
   grid-row: 3 / 4;
   display: grid;
@@ -446,6 +503,16 @@ section {
     .footer {
       _grid-row: 4;
       _grid-template-columns: repeat(2, 1fr); } }
+  @media only screen and (max-width: 50em) {
+    .footer {
+      grid-template-columns: repeat(4, 1fr);
+      grid-row: repeat(2, min-content);
+      gap: 3rem;
+      justify-items: stretch; } }
+  @media only screen and (max-width: 26.57em) {
+    .footer {
+      grid-template-columns: 1fr;
+      grid-row: repeat(3, min-content); } }
   .footer--btn {
     font-size: 2rem;
     border-radius: 4px;
@@ -463,6 +530,12 @@ section {
     @media only screen and (max-width: 75em) {
       .footer--btn {
         _grid-row: 3; } }
+    @media only screen and (max-width: 50em) {
+      .footer--btn {
+        grid-column: 1/ -1;
+        grid-row: 1 / 2;
+        justify-self: flex-start;
+        transform: scale(0.9) translateX(-10px); } }
 
 .profile,
 .clients {
@@ -476,7 +549,28 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 1.6rem; }
+    margin-right: 2.4rem; }
+
+.what-we-do {
+  width: 80%; }
+  @media only screen and (max-width: 50em) {
+    .what-we-do {
+      grid-column: 1 / span 2;
+      grid-row: 2 / 3; } }
+  @media only screen and (max-width: 26.57em) {
+    .what-we-do {
+      grid-column: 1; } }
+
+.our-clients {
+  width: 80%; }
+  @media only screen and (max-width: 50em) {
+    .our-clients {
+      grid-column: 3 / -1;
+      grid-row: 2 / 3; } }
+  @media only screen and (max-width: 26.57em) {
+    .our-clients {
+      grid-column: 1;
+      grid-row: 3 /4; } }
 
 .btn {
   border: none;
