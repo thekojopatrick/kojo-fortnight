@@ -1,6 +1,10 @@
 html {
 	font-size: 62.5%;
 	box-sizing: border-box;
+
+	@media only screen and(max-width:$bp-largest) {
+		font-size: 50%;
+	}
 }
 
 *,
@@ -33,6 +37,11 @@ section {
 	grid-template-columns: [full-start] repeat(8, [col-start] minmax(min-content, 1fr) [col-end]) [full-end];
 	grid-template-rows: 7rem 60vh 30vh;
 	gap: 2rem;
+
+	@media only screen and(max-width:$bp-largest) {
+		margin: 0 7rem;
+		_grid-template-rows: 7rem 40vh 30vh 20vh;
+	}
 }
 
 .logo {

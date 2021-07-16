@@ -5,6 +5,10 @@
         line-height: 1.1;
         letter-spacing: 1rem;
         text-transform: uppercase;
+
+        @media only screen and(max-width:$bp-largest) {
+            font-size: 18rem;
+        }
     }
     &-2 {
     }
