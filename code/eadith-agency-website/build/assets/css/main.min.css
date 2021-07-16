@@ -337,6 +337,10 @@ section {
   grid-template-rows: 7rem 60vh 30vh;
   gap: 2rem; }
 
+.logo {
+  width: 4.5rem;
+  height: 4.5rem; }
+
 .heading-1 {
   font-family: "Bebas Neue", cursive;
   font-size: 19.9rem;
@@ -363,9 +367,13 @@ section {
   transform: rotate(-90deg) translateX(3rem); }
 
 .nav {
-  background-color: #ff4136;
+  _background-color: #ff4136;
   grid-column: full-start / full-end;
-  grid-row: 1 / 2; }
+  grid-row: 1 / 2;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
 
 .header {
   grid-column: col-start 1 / col-end 6;
@@ -401,5 +409,15 @@ section {
   background-color: #3d9970;
   grid-column: full-start / full-end;
   grid-row: 3 / 4; }
+
+.btn {
+  border: none;
+  background-color: transparent;
+  font-family: inherit; }
+  .btn img {
+    width: 4rem;
+    height: 4rem; }
+  .btn--theme {
+    margin-right: 6rem; }
 
 /*# sourceMappingURL=main.min.css.map */
