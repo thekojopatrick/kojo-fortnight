@@ -1,5 +1,46 @@
 .footer {
-    background-color: $olive;
+    _background-color: $olive;
     grid-column: full-start / full-end;
     grid-row: 3 / 4;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: flex-start;
+
+    &--btn {
+        font-size: 2rem;
+        border-radius: 4px;
+        background-color: $color-button !important;
+        color: $color-text-button;
+        padding: 3rem 8rem;
+        text-align: center;
+        letter-spacing: 0.1em;
+        justify-self: start;
+        transform: scale(0.9);
+        transition: all 0.3s ease;
+
+        &:hover,
+        &:active {
+            transform: translateY(-2px) scale(1);
+            background-color: $navy;
+        }
+    }
+}
+
+.profile,
+.clients {
+    display: flex;
+    align-items: center;
+    _justify-content: space-between;
+
+    &__link,
+    &.client__link {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1.6rem;
+    }
 }

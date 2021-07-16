@@ -2,13 +2,11 @@
     border: none;
     background-color: transparent;
     font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
 
     img {
         width: 4rem;
         height: 4rem;
-    }
-
-    &--theme {
-        margin-right: 6rem;
     }
 }
