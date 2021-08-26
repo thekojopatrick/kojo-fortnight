@@ -1,0 +1,16 @@
+.banner {
+  grid-column: full-start / full-end;
+  grid-row: 1/2;
+
+  align-self: center;
+  _justify-self: center;
+
+  padding: 1.5rem 0;
+  border-bottom: 0.5px solid #dee2e6;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

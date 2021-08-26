@@ -1,0 +1,38 @@
+.navbar {
+    grid-column: center-start / center-end;
+    grid-row: 2/3;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__nav {
+        text-align:center;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        padding:0;
+    }
+
+    &__item {
+    }
+
+    &__link {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: $black;
+        margin: 0 4.8rem;
+    }
+
+    &__buttons{
+        display: flex;
+        align-items: center;
+    }
+}
+

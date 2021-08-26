@@ -1,0 +1,30 @@
+.btn {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 0.8rem;
+
+    &__icon {
+        width: 3.2rem;
+        height: 3.2rem;
+        color: black;
+        fill: currentColor;
+    }
+
+    &--search {
+        margin-right: 0.8rem;
+    }
+
+    &:active,
+    &:hover {
+        background-color: black;
+        color: $white;
+    }
+
+    &:hover {
+        .btn__icon {
+            color: $white;
+            fill: currentColor;
+        }
+    }
+}
