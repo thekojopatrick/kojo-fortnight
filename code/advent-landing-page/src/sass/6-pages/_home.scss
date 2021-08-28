@@ -27,6 +27,7 @@
 
 //--- MAIN CONTENT --- //
 
+// ----- EXPLORE ----- //
 .explore {
     &__left {
         max-width: 48rem;
@@ -39,5 +40,56 @@
 
     &-image {
         width: 100%;
+    }
+}
+
+// -----FEATURES ----- //
+
+.features {
+    margin: 15rem 0;
+    display: grid;
+    //grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 6rem;
+    grid-template-rows: repeat(2, min-content);
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+        grid-row: 1/2;
+        grid-column: 1 / -1;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: " ";
+            width: 6rem;
+            height: 0.2rem;
+            bottom: -50%;
+            background-color: var(--secondary-color);
+        }
+    }
+}
+
+.feature {
+    padding: 1.6rem;
+    &__icon {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 2.4rem;
+    }
+
+    &__title {
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        margin-top: 1.6rem;
+        font-size: 1.8rem;
     }
 }
