@@ -1,0 +1,15 @@
+.btn {
+    font-family: inherit;
+    font-size: 2.4rem;
+    border: none;
+    border-radius: 0.8rem;
+    padding: 1.2rem 4.1rem;
+    color: $white;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+
+    &:active,
+    &:hover {
+        background-color: rgba($orange, 0.8);
+    }
+}

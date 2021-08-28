@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>Kojo Patrick Starter Kit</title>
-        <!-- General meta tags needed-->
-        <meta charset="UTF-8" />
-        <!-- Needed for responsive design -->
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <title>Advent-Landing-Page</title>
+    <!-- General meta tags needed-->
+    <meta charset="UTF-8" />
+    <!-- Needed for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Unkempt:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+</head>
 
-        <link rel="stylesheet" href="assets/css/main.min.css" />
-    </head>
+<body class="wrapper">
 
-    <body>
-        <section id="page-home">
-            <div class="wrapper-starter">
-                <h1>Kojo Patrick Starter Project</h1>
-                <p>A cool way to start your next project</p>
-                <p>
-                    This is a starter front-end project which will compile SCSS and JS
-                    files using Gulp 4.
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div class="nav__brand">
+            <h1 class="nav__brand-logo">
+                Avdvent
+            </h1>
+            <span class="circle"></span>
+        </div>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#about" class="nav__link">About us</a></li>
+            <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+            <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+            <li class="nav__item nav__item--line"></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+        </ul>
+    </nav>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="hero">
+            <div class="hero__left">
+                <h1 class="heading-1">Adventure is worthwhile in itself</h1>
+                <p class="text hero-text">Explore and travel new places with advent and enjoy the best experience
                 </p>
-                <div class="author">
-                    <img class="avatar" src="assets/img/avatar.jpg" alt="" />
-                    <p><strong>Kojo Patrick</strong></p>
-                    <a target="_blank" href="https://twitter.com/iamkojopatrick">@iamkojopatrick</a>
-                </div>
+                <button class="btn hero-cta">Get Started &rarr;</button>
             </div>
-        </section>
-        <script src="./assets/js/vendors.js"></script>
-        <script src="./assets/js/app.js"></script>
-    </body>
+            <div class="hero__right">
+                <img class="hero-image" src="assets/img/illustration-travels.svg" alt="travels">
+            </div>
+        </div>
+    </header>
+
+
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
 
 </html>
