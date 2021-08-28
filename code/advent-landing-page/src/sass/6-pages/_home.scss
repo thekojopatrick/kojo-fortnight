@@ -1,4 +1,7 @@
-//--- HEADER --- //
+/**
+// ----- HEADER ----- //
+ */
+
 .header {
     height: 70vh;
 }
@@ -27,7 +30,10 @@
 
 //--- MAIN CONTENT --- //
 
-// ----- EXPLORE ----- //
+/**
+// -----EXPLORE ----- //
+ */
+
 .explore {
     &__left {
         max-width: 48rem;
@@ -43,7 +49,9 @@
     }
 }
 
+/**
 // -----FEATURES ----- //
+ */
 
 .features {
     margin: 15rem 0;
@@ -86,6 +94,30 @@
     &__title {
         display: flex;
         align-items: center;
+    }
+
+    &__text {
+        margin-top: 1.6rem;
+        font-size: 1.8rem;
+    }
+}
+
+/**
+// ----- CONTACT ----- //
+ */
+
+.contact {
+    &__left {
+        max-width: 48rem;
+        width: 50%;
+    }
+
+    &__right {
+        width: 50%;
+    }
+
+    &-image {
+        width: 100%;
     }
 
     &__text {
