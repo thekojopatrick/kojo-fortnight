@@ -337,6 +337,11 @@ body {
 section {
   display: -webkit-box; }
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
 a {
   color: #111;
   text-decoration: none;
@@ -372,6 +377,10 @@ body {
 .heading-1 {
   font-size: 4.8rem;
   line-height: 5.8rem; }
+
+.heading-2 {
+  font-size: 3.6rem;
+  line-height: 4.9rem; }
 
 .text {
   font-size: 2rem;
@@ -429,25 +438,35 @@ body {
   background-color: var(--secondary-color);
   cursor: pointer; }
   .btn:active, .btn:hover {
-    background-color: rgba(255, 133, 27, 0.8); }
+    background-color: #ff851b; }
 
 .header {
   height: 70vh; }
 
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between; }
-  .hero__left {
-    max-width: 48rem;
-    width: 50%; }
-  .hero__right {
-    width: 50%; }
-  .hero-text {
-    margin-bottom: 1.6rem; }
-  .hero-image {
-    width: 100%; }
-  .hero-cta {
-    margin-top: 4.8rem; }
+.hero__left {
+  max-width: 48rem;
+  width: 50%; }
+
+.hero__right {
+  width: 50%; }
+
+.hero-text {
+  margin-bottom: 1.6rem; }
+
+.hero-image {
+  width: 100%; }
+
+.hero-cta {
+  margin-top: 4.8rem; }
+
+.explore__left {
+  max-width: 48rem;
+  width: 50%; }
+
+.explore__right {
+  width: 50%; }
+
+.explore-image {
+  width: 100%; }
 
 /*# sourceMappingURL=main.min.css.map */

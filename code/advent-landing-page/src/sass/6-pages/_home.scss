@@ -4,9 +4,6 @@
 }
 
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     &__left {
         max-width: 48rem;
         width: 50%;
@@ -25,5 +22,22 @@
     }
     &-cta {
         margin-top: 4.8rem;
+    }
+}
+
+//--- MAIN CONTENT --- //
+
+.explore {
+    &__left {
+        max-width: 48rem;
+        width: 50%;
+    }
+
+    &__right {
+        width: 50%;
+    }
+
+    &-image {
+        width: 100%;
     }
 }
