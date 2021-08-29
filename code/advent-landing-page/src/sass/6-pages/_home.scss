@@ -54,10 +54,11 @@
  */
 
 .features {
+    width: 100%;
     margin: 15rem 0;
     display: grid;
     //grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 6rem;
     grid-template-rows: repeat(2, min-content);
     align-items: center;
