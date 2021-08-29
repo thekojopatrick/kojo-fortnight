@@ -125,3 +125,33 @@
         font-size: 1.8rem;
     }
 }
+
+/**
+ // ----- FOOTER ----- //
+ */
+
+.footer {
+    margin: 7rem 0;
+}
+
+.foot-note {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.copyright {
+    font-size: 1.6rem;
+    color: rgba(21, 20, 57, 0.4);
+    mix-blend-mode: normal;
+}
+
+.fa {
+    margin-right: 1.6rem;
+    cursor: pointer;
+
+    &:hover {
+        color: var(--secondary-color);
+    }
+}
