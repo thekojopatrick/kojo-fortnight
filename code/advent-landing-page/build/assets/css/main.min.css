@@ -345,7 +345,7 @@ html {
 body {
   font-size: 1.4rem;
   line-height: 1.6;
-  color: black;
+  _color: black;
   font-family: var(--font-family-2);
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
@@ -475,7 +475,7 @@ body {
       font-size: 4.8rem;
       text-transform: lowercase;
       font-weight: bold;
-      color: var(--black-color);
+      _color: var(--black-color);
       line-height: 5.7rem; }
       @media (max-width: 64em) {
         .nav__brand h1 {
@@ -707,7 +707,8 @@ body {
   .feature__icon {
     width: 2.4rem;
     height: 2.4rem;
-    margin-right: 2.4rem; }
+    margin-right: 2.4rem;
+    fill: var(--secondary-color); }
   .feature__title {
     display: flex;
     align-items: center; }
@@ -742,5 +743,24 @@ body {
 .contact__text {
   margin-top: 1.6rem;
   font-size: 1.8rem; }
+
+html.dark {
+  --secondary-color: #333;
+  --gray-color: #fff;
+  --primary-color: #ffb61d;
+  background-color: #111;
+  color: var(--primary-color); }
+
+.dark a {
+  color: var(--gray-color); }
+  .dark a:hover, .dark a:focus {
+    color: var(--secondary-color); }
+
+.dark .feature__icon {
+  --secondary-color: #ffb61d;
+  fill: var(--secondary-color); }
+
+.dark .text {
+  color: var(--gray-color); }
 
 /*# sourceMappingURL=main.min.css.map */
