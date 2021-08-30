@@ -1,0 +1,21 @@
+.nav {
+    _background-color: $red;
+    grid-column: full-start / full-end;
+    grid-row: 1 / 2;
+    align-self: flex-end;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &--btn {
+        margin-right: 6rem;
+
+        @media only screen and(max-width:$bp-large) {
+            margin-right: 3rem;
+        }
+        @media only screen and(max-width:$bp-medium) {
+            margin-right: 1.5rem;
+        }
+    }
+}

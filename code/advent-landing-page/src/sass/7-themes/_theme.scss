@@ -1,0 +1,29 @@
+html.dark {
+    --secondary-color: #333;
+    --gray-color: #fff;
+    --primary-color: #ffb61d;
+    background-color: #111;
+    color: var(--primary-color);
+}
+
+.dark a {
+    color: var(--gray-color);
+
+    &:hover,
+    &:focus {
+        color: var(--secondary-color);
+    }
+}
+
+.dark .feature__icon {
+    --secondary-color: #ffb61d;
+    fill: var(--secondary-color);
+}
+
+.dark .text {
+    color: var(--gray-color);
+}
+
+.dark .copyright {
+    color: var(--gray-color);
+}

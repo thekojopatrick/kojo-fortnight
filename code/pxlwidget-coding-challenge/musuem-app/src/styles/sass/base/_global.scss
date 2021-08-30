@@ -1,0 +1,30 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-body;
+  background: $background;
+  line-height: 1.25;
+  overflow-x: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: calc(5rem - 1.5rem) calc(7rem - 1.5rem) calc(80vh - 1.5rem) min-content 50vw 30vw repeat(2, 20vw) min-content;
+  grid-template-columns:
+    [full-start] minmax(15rem, 1fr)
+    [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(15rem, 1fr)
+    [full-end];
+  gap: 15px;
+
+  &--fluid {
+    margin: 0;
+    max-width: 100%;
+  }
+}
+
+.content {
+  max-width: 1140px;
+  margin: 0 auto;
+}

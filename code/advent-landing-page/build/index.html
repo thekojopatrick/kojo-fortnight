@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Advent-Landing-Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Unkempt:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.min.css" />
+</head>
+
+<body class="wrapper">
+    <!------------- NAVIGATION ------------>
+    <nav class="nav">
+        <div class="nav__brand">
+            <h1 class="nav__brand-logo">
+                Avdvent
+            </h1>
+            <span class="circle"></span>
+        </div>
+        <ul class="nav__list">
+            <li class="nav__item"><a href="#about" class="nav__link">About us</a></li>
+            <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+            <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+            <li class="nav__item nav__item--line"></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
+            <li class="nav__item toggle-theme"><i class="fas fa-moon"></i></li>
+        </ul>
+    </nav>
+    <!--------- HEADER ---------->
+    <header class="header">
+        <div class="hero flex">
+            <div class="hero__left">
+                <h1 class="heading-1">Adventure is worthwhile in itself</h1>
+                <p class="text hero-text">Explore and travel new places with advent and enjoy the best experience
+                </p>
+                <button class="btn hero-cta">Get Started &rarr;</button>
+            </div>
+            <div class="hero__right">
+                <img class="hero-image" src="assets/img/illustration-travels.svg" alt="travels">
+            </div>
+        </div>
+    </header>
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <!-- EXPLORE -->
+        <section class="explore flex">
+            <div class="explore__left">
+                <img class="explore-image" src="assets/img/illustration-exploring.svg" alt="exploring">
+            </div>
+            <div class="explore__right">
+                <h2 class="heading-2">Life is either a daring adventure or nothing</h2>
+                <p class="text">Life should not be a journey to the grave with the intention of arriving safely in a
+                    pretty and well preserved body, but rather to skid in broadside in a cloud of smoke, thoroughly used
+                    up, totally worn out, and loudly proclaiming ‘Wow! What a Ride!'</p>
+            </div>
+        </section>
+        <!--------- FEATURES -------->
+        <section class="features" id="services">
+            <h2 class="heading-2 underline features__title">What you’ll experience with us!</h2>
+            <div class="feature">
+                <div class="feature__title">
+                    <svg class="feature__icon">
+                        <use xlink:href='assets/img/sprite.svg#icon-food'></use>
+                    </svg>
+                    <h3 class="heading-3">Food is mood</h3>
+                </div>
+                <p class="text feature__text">One cannot think well, love well, sleep well, if one has not dined
+                    well</p>
+            </div>
+            <div class="feature">
+                <div class="feature__title">
+                    <svg class="feature__icon">
+                        <use xlink:href='assets/img/sprite.svg#icon-vehicle'></use>
+                    </svg>
+                    <h3 class="heading-3">Night Camping</h3>
+                </div>
+                <p class="text feature__text">One cannot think Road trips are the equivalent of Human Wings so we
+                    offer that via motor home</p>
+            </div>
+            <div class="feature">
+                <div class="feature__title">
+                    <svg class="feature__icon">
+                        <use xlink:href='assets/img/sprite.svg#icon-firewoods'></use>
+                    </svg>
+                    <h3 class="heading-3">Night Camping</h3>
+                </div>
+                <p class="text feature__text">The darker the night, the brighter the stars and this experience is
+                    breathtaking Camping experience</p>
+            </div>
+        </section>
+        <!--------------- CONTACT US ------------>
+        <section class="contact flex" id="contact">
+            <div class="contact__left">
+                <h2 class="heading-2">We’d Love to Hear from You</h2>
+                <p class="text contact__text">
+                    Please submit your information and a advent representative will get in touch with you
+                </p>
+                <form class="form">
+                    <input type="text" class="form__input" placeholder="Enter your email here">
+                    <button type="submit" class="btn form__btn">Send Email</button>
+                </form>
+            </div>
+            <div class="contact__right">
+                <img class="contact-image" src="assets/img/illustration-landscape.svg" alt="landscape">
+            </div>
+        </section>
+    </main>
+    <!---------- FOOTER --------->
+    <footer class="footer">
+        <nav class="nav">
+            <div class="nav__brand">
+                <h1 class="nav__brand-logo">
+                    Avdvent
+                </h1>
+                <span class="circle"></span>
+            </div>
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#about" class="nav__link">About us</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                <li class="nav__item"><a href="#blog" class="nav__link">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="divider"></div>
+        <div class="foot-note">
+            <div class="copyright">
+                &copy;2021 advent. All rights reserved.
+            </div>
+            <div class="social-medias">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-google"></i>
+            </div>
+        </div>
+    </footer>
+    <!------ SCROLL UP ----->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

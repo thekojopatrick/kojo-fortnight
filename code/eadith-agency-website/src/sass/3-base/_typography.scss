@@ -1,0 +1,61 @@
+.heading {
+    &-1 {
+        font-family: $font-display;
+        font-size: 19.9rem;
+        line-height: 1.1;
+        letter-spacing: 1rem;
+        text-transform: uppercase;
+
+        @media only screen and(max-width:$bp-largest) {
+            font-size: 18rem;
+        }
+        @media only screen and(max-width:$bp-large) {
+            font-size: 15rem;
+        }
+        @media only screen and(max-width:$bp-medium) {
+            font-size: 13rem;
+        }
+        @media only screen and(max-width:$bp-tablet) {
+            font-size: 8rem;
+        }
+        @media only screen and(max-width:$bp-mobile) {
+            font-size: 5rem;
+            line-height: 1;
+        }
+    }
+    &-2 {
+    }
+    &-3,
+    &-4 {
+        text-transform: uppercase;
+        font-size: 2rem;
+        letter-spacing: 0.05rem;
+        font-weight: 500;
+        color: $color-text-light;
+    }
+    &-4 {
+        font-size: 1.2rem;
+    }
+
+    &-sub {
+        font-family: $font-primary;
+        font-size: 2rem;
+        letter-spacing: 0.05rem;
+        font-weight: 300;
+        color: $gray;
+        display: block;
+    }
+
+    &--rotate {
+        transform: rotate(-90deg) translateX(3rem);
+    }
+}
+
+.paragraph {
+    font-size: 2rem;
+    color: $color-text-light;
+}
+
+.bold {
+    font-weight: bold;
+}

@@ -1,0 +1,44 @@
+.team {
+    grid-column: col-start 8 / -1;
+    grid-row: 2 /3;
+    align-self: center;
+    justify-self: center;
+
+    @media only screen and(max-width:$bp-tablet) {
+        align-self: flex-end;
+    }
+
+    @media only screen and(max-width:$bp-mobile) {
+        _display: none;
+        grid-column: 4/ -1;
+        align-self: flex-end;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__member {
+        margin-bottom: 2rem;
+        text-align: center;
+        &--name {
+            font-weight: 500;
+            color: $color-text-light;
+        }
+
+        &--role {
+            font-weight: 300;
+            color: $color-text-dark;
+        }
+
+        &--img {
+            width: 4.5rem;
+            height: 4.5rem;
+            border-radius: 50%;
+            _border: solid 2px $white;
+        }
+    }
+}

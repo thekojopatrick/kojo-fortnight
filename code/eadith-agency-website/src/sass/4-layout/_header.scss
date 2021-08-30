@@ -1,0 +1,17 @@
+.header {
+    grid-column: col-start 1 / col-end 6;
+    grid-row: 2 /3;
+    align-self: center;
+
+    @media only screen and(max-width:$bp-large) {
+        align-self: stretch;
+    }
+    @media only screen and(max-width:$bp-tablet) {
+        align-self: flex-end;
+    }
+
+    @media only screen and(max-width:$bp-mobile) {
+        grid-column: col-start 1 / span 3;
+        align-self: center;
+    }
+}

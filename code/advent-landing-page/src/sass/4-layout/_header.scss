@@ -1,0 +1,39 @@
+/*
+ ----- HEADER ----- 
+*/
+
+.header {
+    _height: 70vh;
+}
+
+.hero {
+    &__left {
+        @include col;
+
+        @include responsive(mobile) {
+            text-align: center;
+        }
+    }
+
+    &__right {
+        @include col;
+    }
+
+    &-text {
+        margin-bottom: 1.6rem;
+        @include responsive(tab-land) {
+            margin-top: 1rem;
+        }
+    }
+
+    &-image {
+        width: 100%;
+    }
+    &-cta {
+        margin-top: 4.8rem;
+
+        @include responsive(tab-land) {
+            margin-top: 3rem;
+        }
+    }
+}

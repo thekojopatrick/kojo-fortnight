@@ -1,0 +1,36 @@
+/*
+  ----- BUTTON ----- 
+*/
+.btn {
+    font-family: inherit;
+    font-size: 2.4rem;
+    border: none;
+    border-radius: 0.8rem;
+    padding: 1.2rem 4.1rem;
+    color: $white;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+
+    &:active,
+    &:hover {
+        background-color: rgba($orange, 1);
+    }
+
+    @include responsive(tab-land) {
+        padding: 1rem 4rem;
+    }
+}
+
+.scrollup {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    padding: 1.6rem;
+    border-radius: 0.4rem;
+    background-color: var(--secondary-color);
+    display: none;
+}
+
+.show-scroll {
+    display: block;
+}

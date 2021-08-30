@@ -1,0 +1,63 @@
+.heading {
+  font-family: $font-heading;
+  font-weight: 700;
+  &-1 {
+    font-size: 4.8rem;
+    line-height: 120%;
+  }
+  &-2 {
+    font-size: 3.6rem;
+    line-height: 120%;
+  }
+  &-3 {
+    font-size: 2.4rem;
+    line-height: 130%;
+  }
+  &-4 {
+    font-size: 2rem;
+    line-height: 130%;
+  }
+  &-5 {
+    font-size: 2.6rem;
+    line-height: 130%;
+  }
+  &-6 {
+    font-size: 1.4rem;
+    line-height: 130%;
+  }
+}
+
+.text {
+  &-lg-2x {
+    font-size: 2.4rem;
+  }
+  &-lg-x {
+    font-size: 2rem;
+  }
+  &-lg {
+    font-size: 1.8rem;
+  }
+  &-md {
+    font-size: 1.6rem;
+  }
+  &-sm {
+    font-size: 1.4rem;
+  }
+  &-sm-x {
+    font-size: 1.2rem;
+  }
+  &--uppercase {
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+}
+
+p,
+span {
+  font-size: 1.4rem;
+  line-height: 150%;
+}
+
+a {
+  font-weight: 600;
+}
