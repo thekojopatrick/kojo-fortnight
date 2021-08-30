@@ -1,6 +1,10 @@
 html {
 	box-sizing: border-box;
 	font-size: 62.5%; //1rem = 10px
+
+	@include responsive(tab-port) {
+		font-size: 50%;
+	}
 }
 
 *,
@@ -24,6 +28,13 @@ body {
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
+
+	@include responsive(tab-land) {
+		width: 80%;
+	}
+	@include responsive(tab-port) {
+		width: 90%;
+	}
 }
 
 section {
