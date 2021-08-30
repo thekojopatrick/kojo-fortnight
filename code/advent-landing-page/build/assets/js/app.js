@@ -1,1 +1,1 @@
-window.sr=ScrollReveal();
+const toggleTheme=document.querySelector(".toggle-theme");toggleTheme.addEventListener("click",function(){const e=document.querySelector("html"),s=document.querySelector(".fas");e.classList.toggle("dark"),s.classList.contains("fa-moon")?(s.classList.remove("fa-moon"),s.classList.add("fa-sun")):(s.classList.remove("fa-sun"),s.classList.add("fa-moon"))}),window.sr=ScrollReveal();
