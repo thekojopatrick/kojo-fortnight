@@ -1,3 +1,4 @@
+/* -------- DARK LIGHT THEME -------- */
 const toggleTheme = document.querySelector(".toggle-theme");
 
 toggleTheme.addEventListener("click", function () {
@@ -14,11 +15,23 @@ toggleTheme.addEventListener("click", function () {
   }
 });
 
-window.sr = ScrollReveal();
+/* ------ SCROLL REVEAL ANIMATION --------- */
+const sr = ScrollReveal({ distance: "60px", duration: "2800", reset: true });
 
-// sr.reveal('h1', {
-//     delay: 0,
-//     duration: 200,
-//     origin: 'bottom',
-//     distance: '100px'
-// });
+sr.reveal(`.nav,.header,.features`, {
+  origin: "top",
+  interval: 100,
+});
+
+sr.reveal(`.explore__left`, {
+  origin: "left",
+});
+
+sr.reveal(`.explore__right`, {
+  origin: "right",
+  interval: 100,
+});
+sr.reveal(`.contact`, {
+  origin: "bottom",
+  interval: 100,
+});
