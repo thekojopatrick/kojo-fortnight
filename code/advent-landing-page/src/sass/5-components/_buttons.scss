@@ -20,3 +20,17 @@
         padding: 1rem 4rem;
     }
 }
+
+.scrollup {
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    padding: 1.6rem;
+    border-radius: 0.4rem;
+    background-color: var(--secondary-color);
+    display: none;
+}
+
+.show-scroll {
+    display: block;
+}

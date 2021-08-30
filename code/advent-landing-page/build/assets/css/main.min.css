@@ -330,7 +330,8 @@ template {
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
   @media (max-width: 56.5em) {
     html {
       font-size: 50%; } }
@@ -597,6 +598,18 @@ body {
   @media (max-width: 75em) {
     .btn {
       padding: 1rem 4rem; } }
+
+.scrollup {
+  position: fixed;
+  bottom: 10%;
+  right: 10%;
+  padding: 1.6rem;
+  border-radius: 0.4rem;
+  background-color: var(--secondary-color);
+  display: none; }
+
+.show-scroll {
+  display: block; }
 
 /*
   ----- FORM ----- 
